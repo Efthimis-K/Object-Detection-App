@@ -86,7 +86,6 @@ This application uses the YOLOv5s (small) model, which can detect 80 different o
 ## Notes
 
 - The YOLOv5 model is automatically downloaded from PyTorch Hub on first run
-- Webcam detection requires a connected camera device
 - For image detection, provide the relative path to the image file
 - The application sets `KMP_DUPLICATE_LIB_OK='TRUE'` to handle potential library conflicts
 
