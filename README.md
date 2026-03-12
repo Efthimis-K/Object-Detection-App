@@ -1,6 +1,6 @@
 # Object Detection App
 
-A Python application that uses YOLOv5 for real-time object detection from webcam or static images.
+A Python application that uses YOLOv5 for object detection in static images.
 
 ## Features
 
@@ -41,26 +41,16 @@ pip install numpy
 
 Run the main script:
 ```bash
-python day78.py
+python object-detection.py
 ```
 
-You will be prompted to choose a detection method:
-- **webcam**: Start real-time detection using your webcam
-- **image**: Detect objects in a static image file
-
-### Webcam Detection
-- Press 'q' to quit the webcam detection
-- The application will display real-time object detection with bounding boxes
-
-### Image Detection
-- Enter the path to your image file when prompted
-- The application will display the image with detected objects
+The application will prompt you to enter the path to your image file.
 
 ## File Structure
 
 ```
 object-detection-app/
-├── day78.py              # Main application script
+├── object-detection.py   # Main application script
 ├── requirements.txt      # Python dependencies
 ├── yolov5s.pt           # Pre-trained YOLOv5 model (auto-downloaded, excluded from git)
 ├── test.jpg             # Sample test image
@@ -91,6 +81,5 @@ This application uses the YOLOv5s (small) model, which can detect 80 different o
 
 ## Troubleshooting
 
-- If you encounter issues with the webcam, make sure your camera is properly connected and not being used by another application
 - For image detection, ensure the image file exists in the correct path
 - If you experience performance issues, try closing other applications that might be using the GPU
